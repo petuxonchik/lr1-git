@@ -8,6 +8,14 @@ def print_fibonacci_pyramid(rows):
     fib_sequence = fibonacci(rows)
     index = 0
     
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Добавьте вызов функции в конец файла
+print(f"Факториал числа {rows}: {
     for i in range(1, rows + 1):
         # Печатаем пробелы для выравнивания
         print(" " * (rows - i), end='')
